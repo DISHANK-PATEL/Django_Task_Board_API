@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'users',
     'tasks',
     'activity',
+    'drf_spectacular'
 ]
 
 MIDDLEWARE = [
@@ -119,3 +120,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Task Board API',
+    'DESCRIPTION': 'Micro Internship Assignment Backend',
+    'VERSION': '1.0.0',
+}
