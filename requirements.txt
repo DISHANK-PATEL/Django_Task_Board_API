@@ -1,0 +1,15 @@
+Django>=4.2,<5.0
+djangorestframework>=3.14
+
+# Swagger / OpenAPI
+drf-spectacular>=0.27
+
+# Auth (JWT)
+djangorestframework-simplejwt>=5.3
+
+# Testing
+pytest>=7.4
+pytest-django>=4.7
+
+# Utilities
+python-dotenv>=1.0
