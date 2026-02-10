@@ -38,3 +38,21 @@ class Task(models.Model):
 
     def __str__(self):
         return self.title
+
+class ActivityLog(models.Model):
+    ACTION_CHOICES = [
+        ('CREATE', 'Task Created'),
+        ('UPDATE', 'Task Updated'),
+        ('STATUS_CHANGE', 'Status Changed'),
+        ('ASSIGNED', 'Task Assigned'),
+        ('DELETE', 'Task Deleted'),
+    ]
+
+    actor = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    task = models.ForeignKey(Task, on_delete=models.SET_NULL, null=True, blank=True)
+    action = models.CharField(max_length=20, choices=ACTION_CHOICES)
+    details = models.TextField(blank=True, null=True)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.actor} - {self.action} - {self.timestamp}"

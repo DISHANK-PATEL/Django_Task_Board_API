@@ -5,6 +5,7 @@ URL configuration for core project.
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework_simplejwt.views import TokenObtainPairView
+from tasks.views import UserTaskDashboardView
 
 
 from drf_spectacular.views import (
@@ -21,4 +22,6 @@ urlpatterns = [
     path("api/users/", include("users.urls")),
     path("api/users/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path('api/tasks/', include('tasks.urls')),
+
+    path('users/me/tasks/', UserTaskDashboardView.as_view(), name='user-dashboard'),
 ]
