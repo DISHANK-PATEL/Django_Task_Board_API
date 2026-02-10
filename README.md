@@ -79,7 +79,7 @@ Example:
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer     | Technology            |
 | --------- | --------------------- |
@@ -93,7 +93,7 @@ Example:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Django_Task_Board_API/
