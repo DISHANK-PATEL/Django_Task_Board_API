@@ -130,7 +130,7 @@ Django_Task_Board_API/
 ### 1️ Clone Repository
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/DISHANK-PATEL/Django_Task_Board_API.git
 cd Django_Task_Board_API
 ```
 
