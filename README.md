@@ -21,9 +21,8 @@ The project follows modular Django architecture with clean separation between do
 ---
 ---
 ## Data Flow Diagram
-<a href="URL_OF_LARGE_IMAGE">
-  <img src="URL_OF_SMALL_IMAGE" alt="Alt text" width="300"/>
-</a>
+[![Preview](https://github.com/user-attachments/assets/19dfdac9-c4e3-49c6-a5ee-9590cc5d23b4)](https://github.com/user-attachments/assets/19dfdac9-c4e3-49c6-a5ee-9590cc5d23b4)
+
 
 
 ## Implemented Features
